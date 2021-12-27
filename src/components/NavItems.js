@@ -18,14 +18,14 @@ const NavItem = ({ navSize, title, icon, description }) => {
           onClick={(e) => handleSetActiveChange(e)}
           p={3}
           borderRadius={8}
-          color="black"
-          _hover={{ textDecor: 'none', bg: '#97FFCF', color: '#97FFCF' }}
+          color="white"
+          _hover={{ textDecor: 'none', bg: '#97FFCF'}}
           background="none"
           _active={{
-            bg: '#97FFCF',
+            bg: '#97FFCF'
           }}
           _focus={{
-            bg: '#97FFCF',
+            bg: '#97FFCF'
           }}
           w={navSize == NAV_SIZE.LARGE && '100%'}
         >
