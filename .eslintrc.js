@@ -10,11 +10,9 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
-      parser: '@typescript-eslint/parser',
       settings: {
         react: { version: 'detect' },
         'import/resolver': {
-          typescript: {},
         },
       },
       env: {
@@ -26,8 +24,6 @@ module.exports = {
         'eslint:recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
-        'plugin:import/typescript',
-        'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
@@ -60,13 +56,6 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
 
         'jsx-a11y/anchor-is-valid': 'off',
-
-        '@typescript-eslint/no-unused-vars': ['error'],
-
-        '@typescript-eslint/explicit-function-return-type': ['off'],
-        '@typescript-eslint/explicit-module-boundary-types': ['off'],
-        '@typescript-eslint/no-empty-function': ['off'],
-        '@typescript-eslint/no-explicit-any': ['off'],
 
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       },
