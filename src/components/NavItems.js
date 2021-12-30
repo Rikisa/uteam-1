@@ -1,6 +1,5 @@
 import { Flex, Text, Icon, Link, Menu, MenuButton, MenuList } from '@chakra-ui/react';
-import NavHoverBox from '../components/NavHoverBox';
-import { NAV_SIZE } from '../constants/index';
+import { NAV_SIZE } from '@constants/index';
 import { useState } from 'react';
 
 const NavItem = ({ navSize, title, icon, description }) => {
